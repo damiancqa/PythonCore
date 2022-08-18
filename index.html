@@ -34,8 +34,7 @@ now.strftime("%D/%M/%Y, %H:%M:%S")
   
   <py-script>
  <py-box>
-   def buttonClick(self):
-    """ handle button click event and output text from entry area"""
+   self.submitButton = Button(self.buttonClick, text="Print", command=buttonClick)
     print('Hello World')    # do here whatever you want
    </py-box>
     </py-script>
