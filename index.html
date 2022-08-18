@@ -6,7 +6,6 @@
 
     <title>PythonCore</title>
     
-    <head>
       <link rel="icon" type="image/png" href="favicon.png" />
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
       <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
@@ -18,7 +17,8 @@
           -
       </py-env>
     </head>
-  </head>
+  <py-repl id="my-repl" auto-generate=true> </py-repl>
+ 
 
   <body>
     Hello world! <br></br>
@@ -48,15 +48,7 @@ def runPython(proxy: JsProxy) -> None:
   
   <py-button id="thebuttonid" label="run Python" type="button" pys-onClick="runPython"></py-button>
   
-  <py-script>
-def greet(firstname, lastname): print(f"Hello {firstname}{lastname}") greet("Steve", "Rogers")
-  </py-script>
-  
-  <py-box widths="2/3;1/6;1/6">
-  <div>Wide Column</div>
-  <div>Narrow Column</div>
-  <div>Narrow Column</div>
-</py-box>
+
   
   <br>
   
