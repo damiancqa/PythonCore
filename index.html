@@ -30,12 +30,14 @@ now = datetime.now()
 now.strftime("%D/%M/%Y, %H:%M:%S")
     </py-script>
   
-  <py-script>
  <py-box>
-   self.submitButton = Button(self.buttonClick, text="Print", command=buttonClick)
-    print('Hello World')    # do here whatever you want
+   All the elements above are experimental and not implemented at their full functionality. Use them with the understanding that the APIs or full support might change or be removed until the visual components are more mature.
    </py-box>
-    </py-script>
+  
+  <py-button>
+    self.submitButton = Button(self.buttonClick, text="Print", command=buttonClick)
+    print('Hello World')    # do here whatever you want
+    </py-button>
   
   <br>
   
@@ -70,9 +72,6 @@ now.strftime("%D/%M/%Y, %H:%M:%S")
       pyscript.write('pi', f'π is approximately {pi:.3f}')
     </py-script>
   
-  <py-button>
-    On Click
-    </py-button>
 
 <h1>Let's plot random numbers</h1>
     <div id="plot"></div>
