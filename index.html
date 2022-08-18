@@ -74,23 +74,11 @@ now.strftime("%D/%M/%Y, %H:%M:%S")
 
       x, y = make_x_and_y(n=1000)
 
-      x = np.random.randn(1000)
-      y = np.random.randn(1000)
 
       fig, ax = plt.subplots()
       ax.scatter(x, y)
       fig
     </py-script>
-  
-   <py-script>
-  # data.py
-import numpy as np
-
-def make_x_and_y(n):
-    x = np.random.randn(n)
-    y = np.random.randn(n)
-    return x, y
-      </py-script>
     
   </body>
 </html>
