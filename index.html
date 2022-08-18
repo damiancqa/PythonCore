@@ -17,7 +17,6 @@
           -
       </py-env>
     </head>
-  <py-repl id="my-repl" auto-generate=true> </py-repl>
  
 
   <body>
@@ -98,6 +97,15 @@ def runPython(proxy: JsProxy) -> None:
       ax.scatter(x, y)
       fig
     </py-script>
+  
+  <!-- All your other HTML -->
+    
+    
+    <!-- Python Script Here -->
+    <py-script>print("Hello World")</py-script>
+
+    <!-- Create a Python REPL -->
+    <py-repl></py-repl>
     
   </body>
 </html>
