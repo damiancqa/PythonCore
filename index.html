@@ -34,11 +34,13 @@ now.strftime("%D/%M/%Y, %H:%M:%S")
   
   <py-script>
  <py-box>
-   print("Hello World")
+   def buttonClick(self):
+    """ handle button click event and output text from entry area"""
+    print('Hello World')    # do here whatever you want
    </py-box>
     </py-script>
   
-  
+  <br>
     <py-script>
         print("Let's compute π:")
         def compute_pi(n):
