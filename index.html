@@ -35,6 +35,7 @@ now.strftime("%D/%M/%Y, %H:%M:%S")
   What is your name?
   <py-inputbox>
     </py-inputbox>
+  print.("Hello")+ .py-inputbox
   
     <py-script>
         print("Let's compute π:")
@@ -73,9 +74,8 @@ now.strftime("%D/%M/%Y, %H:%M:%S")
       import matplotlib.pyplot as plt
       import numpy as np
       
-      from data import make_x_and_y
-
-      x, y = make_x_and_y(n=1000)
+      x = np.random.randn(1000)
+      y = np.random.randn(1000)
 
 
       fig, ax = plt.subplots()
